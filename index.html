@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="scramble">
+            <div class="option">
+                <label for="size-select">Cube size:</label>
+                <select name="cubeSz" id="size-select">
+                    <option value="">Chose size</option>
+                    <option value="22">2x2x2</option>
+                    <option value="33">3x3x3</option>
+                    <!-- <option value="44">4x4x4</option> -->
+                </select>
+            </div>
+            <p class="scramble-content"></p>
+        </div>
+        <div class="timer">
+            <p class="stopWatch">00:00:00</p>
+            <p class="time">00:00:00</p>
+            <div class="avgs">
+                <p class="avg-of-5">avg of 5: <span>--:--:--</span></p>
+                <p class="avg-of-12">avg of 12: <span>--:--:--</span></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn reset">reset</button>
+            <button class="btn history">history</button>
+        </div>
+    </div>
+    <div class="times-area-shadow">
+        <div class="times-area">
+            <h1>History</h1>
+            <ul class="time-list"></ul>
+            <button class="btn clear">clear</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
